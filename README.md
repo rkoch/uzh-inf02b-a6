@@ -23,7 +23,7 @@ Use
 
   of course you can create your own fork ;-)
 * On the master branch you will usually find my finished code to take a look at if you're stuck. But please (for your own sake), do try those assignments by yourself and don't just copy my solutions.
-* After cloning/downloading this repository you can import the project located in the subfolders `Task_B` to `Task_D` into Eclipse CDT via `File -> Import -> Existing Projects into Workspace`
+* After cloning/downloading this repository you can import the project located in the subfolders `Task_D` to `Task_F` into Eclipse CDT via `File -> Import -> Existing Projects into Workspace`
 
 
 Use under Windows
@@ -48,7 +48,7 @@ The same steps can be applied to Linux/Ubuntu but the names will probably be dif
 Repo Structure
 --------------
 
-* Each assignment task is in its own subfolder from (`Task_A` to `Task_D`)
+* Each assignment task is in its own subfolder from (`Task_A` to `Task_F`)
 * In each task folder you will find all relevant eclipse project settings and a makefile in order to build this task. Of course the source code is located in the sub-folder `src/`.
 * ~~I usually do not provide the original source code in the initial commit and initial tag (`initial`) so you have to copy-paste the provided sources for each task by yourself.~~ Screw it. Just checkout the `initial` tag and start hacking with the provided source files.
 
