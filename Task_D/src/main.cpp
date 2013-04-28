@@ -1,30 +1,31 @@
 /*
-  
- University of Zurich
- Department of Informatics
- Visualization and Multimedia Laboratory
- 
- Author: Rafael Ballester
- Date: 12.04.2013
+ * University of Zurich
+ * Department of Informatics
+ * Visualization and Multimedia Laboratory
+ *
+ * Author: Rafael Ballester
+ * Date: 12.04.2013
+ *
+ * Authored by Remo Koch
+ * Public repository at https://github.com/rkoch/uzh-inf02b-a6
  */
 
 #include <iostream>
 #include <vector>
 #include <set>
 
-typedef std::vector<int> VI; // to store the distances
-typedef std::vector<VI> VVI; // to store an adjacency matrix
-typedef std::pair<int,int> PI; // to store an edge
+typedef std::vector<int> VI;                         // to store the distances
+typedef std::vector<VI> VVI;                         // to store an adjacency matrix
+typedef std::pair<int, int> PI;                      // to store an edge
 
-std::set<int> exploredNodes; // set of explored nodes (initially empty)
-std::set< PI > exploredEdges; // set of explored edges (initially empty)
+std::set<int> exploredNodes;                         // set of explored nodes (initially empty)
+std::set<PI> exploredEdges;                          // set of explored edges (initially empty)
 
-void topologicalDFS(VVI& graph, int v) {
-    //TODO: fill in your code here
-}
+void topologicalDFS(VVI& graph, int v);
 
 int main() {
-	VVI graph(9,VI(9,0)); // Create a graph with 9 nodes and no edges (empty adjacency matrix)
+	// Create a graph with 9 nodes and no edges (empty adjacency matrix)
+	VVI graph(9, VI(9, 0));
 
 	// Add the directed edges
 	graph[0][1] = 1;
@@ -42,9 +43,13 @@ int main() {
 	graph[8][5] = 1;
 
 	// Do the topological DFS for every non-visited vertex
-	for (int i = 0; i < graph.size(); ++i) {
-		if (exploredNodes.find(i) == exploredNodes.end())
-			topologicalDFS(graph,i);
+	for (unsigned i = 0; i < graph.size(); ++i) {
+		if (exploredNodes.find(i) == exploredNodes.end()) {
+			topologicalDFS(graph, i);
+		}
 	}
 }
 
+void topologicalDFS(VVI& graph, int v) {
+	// TODO: fill in your code here
+}
